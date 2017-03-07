@@ -9,13 +9,30 @@
 6. 启动应用程序 `NODE_ENV=test node app.js`
 
 ## API Calls
+
+### Create
 curl -X POST -H 'Content-Type: application/x-www-form-urlencoded' -d 'task[task]=study nodejs' -i http://localhost:3001/api/v1/tasks
+
+### Read
 curl -X GET http://localhost:3001/api/v1/tasks
 
-### List in Mongo
-/usr/local/mongodb/bin/mongo
-use todo_test
-db.tasks.find().pretty()
+### Update
+
+...
+
+### Delete
+
+...
+
+## Mongo
+
+```
+$ /usr/local/mongodb/bin/mongo
+$ use todo_test
+$ db.tasks.find().pretty()
+```
+输出如下
+
 ```
 {
 	"_id" : ObjectId("58be7b6a647654c45821b47e"),
