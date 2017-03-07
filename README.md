@@ -1,16 +1,21 @@
 # nodejs_api
-## Install
+
+## Installation
 1. 安装nodejs https://nodejs.org/en/ 以获得npm
 2. package.json声明依赖包（express，mongoose）
 3. 执行npm install安装依赖包
 4. 安装mongodb http://www.mongodb.org/downloads
 5. 启动mongodb `/usr/local/mongodb/bin/mongod`
 6. 启动应用程序 `NODE_ENV=test node app.js`
+
 ## Invoking
+
 ### Insert
 curl -X POST -H 'Content-Type: application/x-www-form-urlencoded' -d 'task[task]=study nodejs' -i http://localhost:3001/api/v1/tasks
+
 ### List
 curl -X GET http://localhost:3001/api/v1/tasks
+
 ### List in Mongo
 /usr/local/mongodb/bin/mongo
 use todo_test
