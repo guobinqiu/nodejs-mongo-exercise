@@ -1,6 +1,6 @@
 # nodejs_api
 
-1. 安装nodejshttps://nodejs.org/en/以获得npm
+1. 安装nodejs https://nodejs.org/en/ 以获得npm
 2. package.json声明依赖包（express，mongoose）
 3. 执行npm install安装依赖包
 4. 安装mongodb http://www.mongodb.org/downloads
