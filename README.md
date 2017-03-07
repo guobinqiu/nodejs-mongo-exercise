@@ -8,12 +8,8 @@
 5. 启动mongodb `/usr/local/mongodb/bin/mongod`
 6. 启动应用程序 `NODE_ENV=test node app.js`
 
-## Invoking
-
-### Insert
+## API Calls
 curl -X POST -H 'Content-Type: application/x-www-form-urlencoded' -d 'task[task]=study nodejs' -i http://localhost:3001/api/v1/tasks
-
-### List
 curl -X GET http://localhost:3001/api/v1/tasks
 
 ### List in Mongo
