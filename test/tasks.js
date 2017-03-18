@@ -1,5 +1,6 @@
 var http = require('http');
-var asset = require('assert');
+var assert = require('assert');
+var app = require('../app.js');
 
 describe('api v1', function(){
   describe('GET /api/v1/tasks', function(){
