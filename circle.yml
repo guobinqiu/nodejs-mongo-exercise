@@ -1,11 +1,16 @@
-machine:
-  node:
-    version: 6.1.0
+# machine:
+#   node:
+#     version: 6.1.0
 
 dependencies:
+  pre:
+    - wget https://nodejs.org/dist/v6.10.0/node-v6.10.0-linux-x64.tar.xz
+    - tar zxvf node-v6.10.0-linux-x64.tar.xz
+    - cd node-v6.10.0-linux-x64 && make
   override:
     - npm install
 
 test:
   override:
     - NODE_ENV=test npm test
+
