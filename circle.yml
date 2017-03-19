@@ -4,9 +4,9 @@
 
 dependencies:
   pre:
-    - wget https://nodejs.org/dist/v6.10.0/node-v6.10.0.tar.gz
-    - tar zxvf node-v6.10.0.tar.gz
-    - cd node-v6.10.0 && ./configure && make && make install
+    - wget https://nodejs.org/dist/v6.10.0/node-v6.10.0-linux-x64.tar.xz
+    - xz -d node-v6.10.0-linux-x64.tar
+    - tar zxvf node-v6.10.0-linux-x64.tar
   override:
     - npm install
 
